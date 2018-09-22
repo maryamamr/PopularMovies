@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rec"
+    android:clickable="true"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="Type of sorting"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorAccent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/top_rated_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top rated movies"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <RadioButton
+            android:id="@+id/most_popular_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most popular movies"
+            android:textColor="@color/colorPrimaryDark" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button"
+            android:text="Save"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_button"
+            android:padding="8dp"
+            android:text="Cancel"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</LinearLayout>
